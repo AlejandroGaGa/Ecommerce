@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d33e48c3b54441758b6cfdfeb9ae4279" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.Calificacion" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.Categoria" Width="1.5" PointX="3.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.Cliente" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.Comentario" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.DetalleFactura" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.Factura" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.Facturacion" Width="1.5" PointX="3" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.FormaPago" Width="1.5" PointX="1.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.ImagenProducto" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.Producto" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tiendalibre_AGGModel.CategoriaProducto" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_Calificacion_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_Calificacion_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_CategoriaProducto_Categoria" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_Comentario_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_Factura_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_Comentario_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_DetalleFactura_Factura" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_DetalleFactura_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_Factura_FormaPago" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_Facturacion_Factura" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_ImagenProducto_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="Tiendalibre_AGGModel.FK_CategoriaProducto_Producto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
