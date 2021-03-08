@@ -55,7 +55,7 @@
         </nav>
         <!--FIN DE NAVBAR-->
 
-        <!--FILTROS-->
+        <!--INICIO DE FILTROS-->
         <div class="card" style="width: 17.5rem; padding: 1rem; margin: .5rem;">
             <p>
                 Ordenar por
@@ -206,6 +206,29 @@
             </div>
         </div>
         <!--FIN FILTROS-->
+
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/e3f28dbc-7abe-4176-9cb7-01c1e2440a78/calzado-jordan-delta-GgsBzK.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jordan Delta</h5>
+                    <h6 class="card-subtitle">$1739</h6>
+                    <p class="card-text">Created 14/03/21</p>
+                    <button type="button" class="btn btn-dark">Consultar</button>
+                    <button type="button" class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/3b23ee15-a3e1-41a7-b7fd-ff1e4f870519/calzado-air-max-2090-XqNbcT.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jordan Delta</h5>
+                    <h6 class="card-subtitle">$1739</h6>
+                    <p class="card-text">Created 14/03/21</p>
+                    <button type="button" class="btn btn-dark">Consultar</button>
+                    <button type="button" class="btn btn-danger">Borrar</button>
+                </div>
+            </div>
+        </div>
 
         <!--INICO DE FOOTER-->
         <footer class="section bg-footer">
