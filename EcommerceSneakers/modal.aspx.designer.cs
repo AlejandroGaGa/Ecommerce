@@ -11,7 +11,7 @@ namespace EcommerceSneakers
 {
 
 
-    public partial class Index
+    public partial class modal
     {
 
         /// <summary>

@@ -1,1 +1,29 @@
-﻿
+﻿.modal-header {
+    background-color: #191919;
+}
+
+    .modal-header h3 {
+        color: #00A1E9;
+    }
+
+    .modal-header h4 {
+        color: white;
+    }
+
+.modal-body {
+    background-color: #191919;
+    color: #00A1E9;
+}
+
+    .modal-body input {
+        background-color: gray;
+    }
+
+        .modal-body input::placeholder {
+            color: white;
+        }
+
+.footermodal {
+    background-color: #191919;
+    color: #00A1E9;
+}

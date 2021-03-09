@@ -96,10 +96,15 @@
       <DependentUpon>ecommercedb.edmx</DependentUpon>
       <LastGenOutput>ecommercedb.cs</LastGenOutput>
     </Content>
+    <Content Include="estilos.css" />
+    <Content Include="images\plug.png" />
     <Content Include="images\slide1.jpg" />
     <Content Include="images\slide2.jpg" />
     <Content Include="images\slide3.jpg" />
     <Content Include="Index.aspx" />
+    <Content Include="jquery\jquery-3.3.1.min.js" />
+    <Content Include="modal.aspx" />
+    <Content Include="ScriptAnimaciones\modal.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -263,6 +268,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modal.aspx.cs">
+      <DependentUpon>modal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modal.aspx.designer.cs">
+      <DependentUpon>modal.aspx</DependentUpon>
     </Compile>
     <Compile Include="mostrarproductos_Result.cs">
       <DependentUpon>ecommercedb.tt</DependentUpon>
