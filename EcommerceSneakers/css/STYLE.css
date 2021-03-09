@@ -1,1 +1,26 @@
-﻿
+﻿nav {
+    align-content: center;
+    text-align: center;
+    color: #05AFF2;
+}
+
+    nav a {
+        color: #05AFF2;
+    }
+
+    nav btn {
+        color: #05AFF2;
+    }
+
+#Button1 {
+    color: #05AFF2;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li {
+    float: left;
+}
