@@ -7,13 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace EcommerceSneakers
-{
-
-
-    public partial class modal
-    {
-
+namespace EcommerceSneakers {
+    
+    
+    public partial class modal {
+        
         /// <summary>
         /// Control form1.
         /// </summary>
