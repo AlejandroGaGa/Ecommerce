@@ -177,3 +177,4 @@ C:\Users\AlejandroGaGa\Documents\GitHub\Ecommerce\EcommerceSneakers\obj\Debug\Ec
 C:\Users\AlejandroGaGa\Documents\GitHub\Ecommerce\EcommerceSneakers\obj\Debug\EcommerceSneakers.csproj.CopyComplete
 C:\Users\AlejandroGaGa\Documents\GitHub\Ecommerce\EcommerceSneakers\obj\Debug\EcommerceSneakers.dll
 C:\Users\AlejandroGaGa\Documents\GitHub\Ecommerce\EcommerceSneakers\obj\Debug\EcommerceSneakers.pdb
+D:\Alex\Desarrollo web\Ecommerce\EcommerceSneakers\obj\Debug\EcommerceSneakers.csprojAssemblyReference.cache

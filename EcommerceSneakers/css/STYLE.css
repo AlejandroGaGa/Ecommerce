@@ -1,4 +1,36 @@
-﻿.modal-header {
+﻿/*Navbar*/
+nav {
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+    nav a {
+        color: white;
+    }
+
+    nav btn {
+        color: white;
+    }
+
+#Button1 {
+    color: #05AFF2;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li {
+    float: left;
+}
+
+.form-select {
+    width:100px;
+}
+/*navbar*/
+.modal-header {
     background-color: #191919;
 }
 
@@ -27,3 +59,5 @@
     background-color: #191919;
     color: #00A1E9;
 }
+
+/*footer*/
