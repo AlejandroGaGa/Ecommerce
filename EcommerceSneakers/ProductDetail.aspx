@@ -6,6 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -63,11 +64,11 @@
             </nav>
         </header>
         <div>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" style="max-width: 50%; margin: auto;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
+                            <div class="carousel-indicators bg-dark">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -95,10 +96,20 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <asp:Button ID="Button1" runat="server" Text="Agregar a la bolsa de compras" />
+                            <h4 class="card-title">Nike Air VaporMax 2020 FK</h4>
+                            <p class="card-text"><small class="text-muted">Materiales sustentables</small></p>
+                            <p class="card-text">Selecciona la talla</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>25</option>
+                                <option value="1">25.5</option>
+                                <option value="2">26</option>
+                                <option value="3">26.5</option>
+                            </select>
+                            <asp:Button class="btn bg-dark.bg-gradient" ID="btnagregaralarrito" runat="server" Text="Agregar a la bolsa de compras" />
+
+                            <p>Detalles del envio:</p>
+                            <p>Por el momento no disponemos de envio a domicilio</p>
+
                         </div>
                     </div>
                 </div>

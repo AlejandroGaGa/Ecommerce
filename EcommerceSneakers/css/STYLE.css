@@ -24,3 +24,7 @@ ul {
 li {
     float: left;
 }
+
+.form-select {
+    width:100px;
+}
