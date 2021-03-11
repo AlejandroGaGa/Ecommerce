@@ -55,9 +55,9 @@
         </nav>
         <!--FIN DE NAVBAR-->
 
-        <div class="row">
+        <div class="container row">
 
-            <div class="col-sm-3">
+            <div class="col-sm-3" style="position:fixed;">
                 <div>
                     <!--INICIO DE FILTROS-->
                     <div class="card" style="width: 17.5rem; padding: 1rem; margin: .5rem;">
@@ -190,11 +190,11 @@
                             <div>
                                 <p>
                                     Talla
-                            <a data-bs-toggle="collapse" href="#talla" role="button" aria-expanded="false" aria-controls="talla">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                </svg>
-                            </a>
+                                    <a data-bs-toggle="collapse" href="#talla" role="button" aria-expanded="false" aria-controls="talla">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                        </svg>
+                                    </a>
                                 </p>
                                 <div class="collapse" id="talla">
                                     <select class="form-select" aria-label="Tallas">
@@ -213,9 +213,10 @@
                 </div>
             </div>
 
-            <div class="col-sm-9">
+            <!--INICIO PRODUCTOS-->
+            <div class="col-sm-10" style="left:30%;">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/e3f28dbc-7abe-4176-9cb7-01c1e2440a78/calzado-jordan-delta-GgsBzK.jpg">
@@ -224,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/5a1a9815-dddd-4101-82fe-9f507ef79b63/air-force-1-react-lv8-herrenschuh-83NTXw.jpg" />
@@ -233,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/26ac2827-0328-4079-8983-3e3867365671/react-vision-herrenschuh-4cb8Sx.jpg" />
@@ -242,7 +243,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/f14ee43e-b39d-41f4-b68d-770c6e22a66b/kyrie-7-play-future-basketballschuh-b8qZ3G.jpg">
@@ -251,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2ae5b18f-461b-496d-b890-98670da39a72/go-flyease-schuh-1D13ZT.jpg" />
@@ -260,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8d01298c-b3e5-460a-8f45-e518fd3bdd18/air-jordan-xxxv-basketballschuh-vKMDjw.jpg" />
@@ -269,16 +270,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
-                                <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/02949467-b893-4d28-ae6e-8ac11ccc6f36/dunk-high-retro-herrenschuh-XVRxQ9.jpg"/>">
+                                <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/02949467-b893-4d28-ae6e-8ac11ccc6f36/dunk-high-retro-herrenschuh-XVRxQ9.jpg" />">
                                 <h5 class="card-title">Jordan Delta</h5>
                                 <h6 class="card-subtitle">$1739</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/83db7001-4b7c-4af8-97ac-3cf6489bbaea/jordan-delta-mid-herrenschuh-bp21WR.jpg" />
@@ -287,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/1c99389a-0f23-4d0e-883f-057d5e8b0322/jordan-why-not-zer04-marathon-basketballschuh-0XD03w.jpg" />
@@ -296,16 +297,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
-                                <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/11a715e5-d656-4302-98d7-34af643ebe62/air-max-exosense-herrenschuh-27vpnt.jpg"/>
+                                <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/11a715e5-d656-4302-98d7-34af643ebe62/air-max-exosense-herrenschuh-27vpnt.jpg" />
                                 <h5 class="card-title">Jordan Delta</h5>
                                 <h6 class="card-subtitle">$1739</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/3137befd-5898-4933-a731-21ae0cd2a103/ispa-drifter-split-schuh-DpWWrR.jpg" />
@@ -314,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-body">
                                 <img class="img-fluid img-thumbnail card-img-top" src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/134dc03e-87b8-4f03-a882-202f95d02f96/calzado-jordan-ma2-dmkgC9.jpg" />
@@ -325,6 +326,8 @@
                     </div>
                 </div>
             </div>
+            <!--FIN PRODUCTOS-->
+
         </div>
 
         <!--INICO DE FOOTER-->
