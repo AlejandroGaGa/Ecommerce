@@ -207,14 +207,19 @@
         <header class="fixed-top">
             <nav class="navbar navbar-expand-lg" style="background-color: #191919">
                 <div class="container-fluid">
+                    <div class="col-2 col-md-1">
                     <a class="navbar-brand" href="#">
-                        <img src="images/plug.png" height="60" width="60" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="images/plug.png" height="60" width="60" /></a>
+                    </div>
+                   
+                   
+                   <div class="col-2 col-md-2">
+                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                        <div class="row">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="col-3">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Home</a>
                                 </li>
@@ -222,27 +227,18 @@
                                     <a class="nav-link" href="#">Ofertas</a>
                                 </li>
                             </ul>
+                    </div>
                         </div>
-                        <div class="col-6">
+                    </div>
+              <!------------->
+                        <div class="col-8 col-md-4">
                             <div class="row">
-                                <div class="input-group col-md-10">
-                                    <input class="form-control me-2" type="search" placeholder="Buscar un producto por marca o modelo" />
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="bi bi-search" style="color: #05AFF2;"></i>
-                                    </span>
-                                </div>
-                                <div class="col-md-2">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-2 col-md-2">
                                     <a href="#">
                                         <i class="bi bi-basket3-fill" type="button" data-toggle="modal" data-target="#modal-compra" style="color: #05AFF2;"></i>
                                     </a>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-10 col-md-10">
                                     <a href="#">
                                         <i class="bi bi-person-circle" type="button" data-toggle="modal" data-target="#modal-login" style="color: #05AFF2;"></i>
                                         <asp:Label ID="Label1" runat="server" Text="Luis Angel Garcia Pineda"></asp:Label>
@@ -254,8 +250,19 @@
                                 </div>--%>
                             </div>
                         </div>
-                    </div>
-                </div>
+                     <div class="col-12 col-md-5">
+                            <div class="row">
+                                <div class="input-group col-md-12">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar un producto por marca o modelo" />
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="bi bi-search" style="color: #05AFF2;"></i>
+                                    </span>
+                                </div>
+                               
+                            </div>
+                     </div>
+                    <!--</div>
+                </div>-->
             </nav>
         </header>
         <!--fin header-->
@@ -264,9 +271,11 @@
         <div class="container row">
 
             <div class="col-sm-3" style="position: fixed;">
-                <div>
+                <>
                     <!--INICIO DE FILTROS-->
+                    
                     <div class="card" style="width: 17.5rem; padding: 1rem; margin: .5rem; margin-top: 30%">
+                        <div class="col-12 col-md-12">
                         <p>
                             Ordenar por
                     <a data-bs-toggle="collapse" href="#order" role="button" aria-expanded="false" aria-controls="order">
@@ -301,10 +310,11 @@
                                 </label>
                             </div>
                         </div>
+                        </div>
                     </div>
-
-                    <!-- FILTROS -->
+                     <!-- FILTROS -->
                     <div class="card" style="width: 17.5rem; padding: 1rem; margin: .5rem;">
+                        <div class="col-12 col-md-12">
                         <p>Filtros</p>
                         <div>
                             <div class="form-check">
@@ -415,6 +425,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                     <!--FIN FILTROS-->
                 </div>
             </div>
@@ -555,7 +566,7 @@
             </div>
             <!--FIN DE MODAL-->
             <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-10 row" style="left: 30%; margin-top: 90px;"></main>
+            <main id="items" class="col-sm-12 row" style="left: 27%; margin-top: 90px; position:absolute; z-index:2;"></main>
     </form>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
