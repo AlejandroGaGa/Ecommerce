@@ -20,7 +20,7 @@
                     id: 1,
                     nombre: 'Sneaker1',
                     precio: 199.99,
-                    imagen: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/e3f28dbc-7abe-4176-9cb7-01c1e2440a78/calzado-jordan-delta-GgsBzK.jpg'
+                    imagen: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2ecf8356-5995-4d40-9822-1f56231b99af/calzado-air-force-1-07-lv8-MHkmkr.jpg'
                 },
                 {
                     id: 2,
@@ -62,6 +62,7 @@
             const $total = document.querySelector('#total');
             const $botonVaciar = document.querySelector('#boton-vaciar');
 
+
             // Funciones
             function renderItems() {
                 for (let info of baseDeDatos) {
@@ -75,7 +76,7 @@
                     let miNodoTitle = document.createElement('h5');
                     miNodoTitle.classList.add('card-title');
                     miNodoTitle.textContent = info['nombre'];
-                    
+
                     // Imagen
                     let miNodoImagen = document.createElement('img');
                     miNodoImagen.classList.add('img-fluid');
@@ -87,7 +88,7 @@
                     // Boton 
                     let miNodoBoton = document.createElement('a');
                     miNodoBoton.classList.add('btn', 'btn-primary');
-          
+
 
                     miNodoBoton.textContent = 'Agregar a canasta';
                     miNodoBoton.setAttribute('marcador', info['id']);
@@ -96,10 +97,9 @@
                     let miNodoBoton2 = document.createElement('a');
                     miNodoBoton2.classList.add('btn', 'btn-warning');
 
-
                     miNodoBoton2.textContent = 'ver';
-                    miNodoBoton2.setAttribute('data-target','');
-                    //miNodoBoton2.addEventListener('click');
+                    miNodoBoton2.setAttribute('data-target', '');
+                    miNodoBoton2.addEventListener('click', mostrarmodal);
                     // Insertamos
                     miNodoCardBody.appendChild(miNodoImagen);
                     miNodoCardBody.appendChild(miNodoTitle);
@@ -111,6 +111,10 @@
                 }
             }
 
+            function mostrarmodal() {
+                $('#modal-detail').modal('show');
+            }
+
             function anyadirCarrito() {
                 // Anyadimos el Nodo a nuestro carrito
                 carrito.push(this.getAttribute('marcador'))
@@ -118,6 +122,8 @@
                 calcularTotal();
                 // Renderizamos el carrito 
                 renderizarCarrito();
+
+                $('#modal-compra').modal('show');
             }
 
             function renderizarCarrito() {
@@ -260,6 +266,7 @@
         </header>
         <!--fin header-->
         <!--FIN DE NAVBAR-->
+
         <!---INICIO DE FILTROS LATERALES-->
         <div class="container row">
 
@@ -419,6 +426,42 @@
                 </div>
             </div>
             <!-- FIN DE FILTROS LATERALES-->
+            <!--inicio de carrusel-->
+            <div id="carouselExampleCaptions" class="carousel slide col-sm-10 row" style="left: 30%; margin-top: 90px; position: relative;" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slide1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nike Air Force 1 '07</h5>
+                            <p>El fulgor vive en el Nike Air Force 1 ’07, el modelo original de básquetbol que le da un toque novedoso a las características más recordadas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nike Air Force 1/1</h5>
+                            <p>Sueña en grande con la leyenda que conoces y te encanta. El Nike Air Force 1/1 es tuyo para personalizarlo como desees. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nike Air Force 1/1</h5>
+                            <p>Sueña en grande con la leyenda que conoces y te encanta. El Nike Air Force 1/1 es tuyo para personalizarlo como desees. </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--fin de carrusel-->
+
             <!--INICIO DE MODA
         <div class="container">
             
@@ -554,8 +597,95 @@
                 </div>
             </div>
             <!--FIN DE MODAL-->
+            <!--Modal Compras-->
+            <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3></h3>
+                            <h4 class="modal-title" id="myModal-label">Details</h4>
+                            <h3>Sneakers</h3>
+                            <button type="button" class="close btn-ligth text-white" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+
+                        <div class="modal-body">
+                            <center>
+                         <img src="images/plug.png" heigt="200" width="200"/>
+                            </center>
+                            <!--inicio de tabla canasta-->
+                            <div>
+                                <div class="card mb-3 " style="max-width: 100%; margin: auto;">
+                                    <div class="row g-0 ">
+                                        <div class="col-md-4 ">
+                                            <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                                                <div class="carousel-indicators ">
+                                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                </div>
+                                                <div class="carousel-inner ">
+                                                    <div class="carousel-item active">
+                                                        <img src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/d4452769-d6ac-4121-8f98-96f7cb9e0f68/calzado-air-vapormax-2020-fk-d4X60M.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/02f6c556-2210-4dcf-a2a1-a0609feeddc1/calzado-air-vapormax-2020-fk-d4X60M.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,q_80,w_440/ea302c1e-5463-4d42-9a0f-29c6cdea1f2b/calzado-air-vapormax-2020-fk-d4X60M.jpg" class="d-block w-100" alt="...">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Nike Air VaporMax 2020 FK</h4>
+                                                <p class="card-text"><small class="text-muted">Materiales sustentables</small></p>
+                                                <p class="card-text">Selecciona la talla</p>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>25</option>
+                                                    <option value="1">25.5</option>
+                                                    <option value="2">26</option>
+                                                    <option value="3">26.5</option>
+                                                </select>
+                                                <br />
+                                                <asp:Button class="btn bg-dark.bg-gradient" ID="btnagregaralarrito" runat="server" Text="Agregar a la bolsa de compras" />
+
+                                                <p>Detalles del envio:</p>
+                                                <p>Por el momento no disponemos de envio a domicilio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--fin de canasta tabla-->
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--FIN DE MODAL-->
             <!-- Elementos generados a partir del JSON -->
             <main id="items" class="col-sm-10 row" style="left: 30%; margin-top: 90px;"></main>
+
+            <footer class="bg-light text-center text-lg-start col-sm-10 row" style="left: 30%; margin-top: 90px;" >
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
     </form>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
